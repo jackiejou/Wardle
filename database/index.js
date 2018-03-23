@@ -15,10 +15,10 @@
 const knex = require('knex') ({
     client: 'pg',
     connection: {
-      host: '127.0.0.1', 
-      user: 'decross', 
-      password: '', 
-      database: 'paymo', 
+      host: '127.0.0.1',
+      user: 'postgres',
+      password: '0',
+      database: 'paymo',
     },
     pool: { min: 0, max: 7 }
   });
@@ -26,4 +26,3 @@ const knex = require('knex') ({
 module.exports = {
   pg: knex
 }
-
